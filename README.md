@@ -3,4 +3,4 @@ Repositório criado para o desafio de Projeto DIO Bootcamp Eduzz Web Fullstack D
 
 
 ## Links úteis:
-[Sintaxe básica do Markdown](https://www.markdownguide.org/basic-syntax/)
+- [Sintaxe básica do Markdown](https://www.markdownguide.org/basic-syntax/)
