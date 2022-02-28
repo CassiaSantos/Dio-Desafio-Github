@@ -1,0 +1,20 @@
+Chave SSH - Professor Otávio Perkles
+- Forma de estabelecer uma conexão encriptada entre duas máquinas;
+COMO CONFIGURAR:
+1. Logar no GitHUb
+2. Acessar as 'Configurações' no ícone do meu profile;
+3. Clicar na opção 'SSH and GPG keys' no menu lateral esquerdo;
+4. Clicar no botão 'New SSH key'
+5. abrir o terminal e digitar 'ssh-keygen -t ed25519 -C cassia.oliveira.profissional@gmail.com';
+6. Clicar 'Enter' 2x;
+7. Digitar a senha para esta chave e depois digitar novamente quando solicitado;
+8. Após a saída da localização da chave pública, navegar para a pasta em que foi salva: /home/cassiasantos/.ssh/
+9. Listar diretório e será exibido o par de chaves;
+10. Rodar o comando 'cat id_ed25519.pub' para que o conteúdo (chave) seja exibido;
+11. Copiar a saída e colar no campo 'Key' no GitHub e colocar o título para a chave no campo 'Title';
+12. Clicar no botão 'Add SSH Key';
+13. Confirmar senha pessoal na plataforma;
+14. No terminal, digitar: eval $(ssh-agent -s) e clicar 'Enter' --> Adiciona chave ao agente;
+ - a saída será o pid com que o ssh agent background foi inicializado;
+ 15. Digite 'ssh-add id_ed25519' e a senha definida enteriormente. Aparecerá uma mensagem de Identificação adicionada!;
+
