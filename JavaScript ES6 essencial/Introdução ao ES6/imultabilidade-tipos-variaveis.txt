@@ -1,0 +1,4 @@
+Imultabilidade:
+Toda adição ou exibições de dados específicos fará com o ponteiro aponte para uma refência na memória gerada a partir da cópia das informações contidas na referência original;
+
+
