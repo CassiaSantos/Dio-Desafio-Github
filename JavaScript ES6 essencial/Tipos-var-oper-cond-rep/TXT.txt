@@ -1,0 +1,50 @@
+O JS contém:
+
+* 6 tipos primitivos:
+- string: cadeia de caracteres;
+- number: número;
+- boolean: True or False;
+- null: null;
+- undefined: quando a var existe, porém não foi setada;
+- symbol: cria valores únicos. Consegue habilitar uma forma de as propriedades não serem sobrescritas;
+	--> Não é possível acesá-los com estruturas de repetição padrôes;
+	--> Não exibe no object.keys/values(), e sim com object.getOwnPropertySymbols(<symbol>).
+	--> acessar propriedades: reflect.ownKeys(<symbol>);
+
+
+* Outros tipos:
+- object;
+- function: um objeto que pode ser chamado;
+- array: um objeto que se relaciona com seus itens através de posições;
+
+* Criação de objetos:
+const user = {
+    name: "Cássia"
+    lastName: "Santos" 
+}
+ // Recuperação das chaves do objeto:
+ object.keys(user);
+ 
+ // Recuperação dos valores das chaves do objeto:
+ object.values(user);
+ 
+ // Retorna array de arrays com [nome_prop, valor_prop]:
+  object.entries(user);
+  
+// adiciona propriedade e valor:
+object.assign (user, {fullname: Cássia Oliveira dos Santos});
+
+// Congela objeto:
+object.freeze([myObj]);
+
+// altera valor de uma propriedade já existente:
+object.seal([myObj]);
+
+
+// Simulação de um Enum com Symbol:
+const directions{
+	UP: symbol( 'UP' ), 
+	DOWN: symbol( 'DOWN' ), 
+	RIGHT: symbol( 'RIGHT' ), 
+	LEFT: symbol( 'LEFT' ), 
+};
