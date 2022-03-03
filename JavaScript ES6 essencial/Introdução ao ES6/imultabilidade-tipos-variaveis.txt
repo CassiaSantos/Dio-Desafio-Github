@@ -1,4 +1,17 @@
 Imultabilidade:
 Toda adição ou exibições de dados específicos fará com o ponteiro aponte para uma refência na memória gerada a partir da cópia das informações contidas na referência original;
 
+Tipos e Variáveis:
+* var: respeita escopo global e escopo de função;
+* let: respeita escopo de bloco; o valor de 1 let não vale existe dentro de outro bloco, mesmo que seja filho de seu bloco.
+* const: cria uma constante - não é possível alterar o valor, ou seja, mudar a referência do ponteiro. Quando se trata de um objeto, é possível alterar apenas as propriedades. Quando é um array, é possível adicionar, remover e trocar itens.
+----------------- ESCOPOS: ------------------------------
+// escopo global
 
+{
+    // escopo de bloco
+}
+
+function funcao{
+    // escopo de função
+} 
