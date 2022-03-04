@@ -48,3 +48,61 @@ const directions{
 	RIGHT: symbol( 'RIGHT' ), 
 	LEFT: symbol( 'LEFT' ), 
 };
+
+- funções:
+a função abaixo pode ser reescrita como
+function fn(){
+	return 'code here'
+}
+
+! PESQUISAR:
+- diferença de ArrowFunction e função normal!
+- valor do this com arrow function sempre apontará para o contexto de sua criação, já com funções normais, será o valor que possui no momento de sua excecução.
+
+OPERADORES:
+incremento:
+a = ++2 // recebe 2 com o valor já incrementado: 3;
+a = 2++ // recebe 2 e dps incrementa;
+
+lógicos:
+and: &&
+ou: ||
+not: !
+
+SPREAD:
+No trabalho com array e/ou objetos, consegue iterar a cada item e passar por parâmetros
+
+ESTRUTURAS DE REPETIÇÃO:
+- if/else:
+if (<cond>){ // a condição é vdd?
+	// code here
+} else { // senão
+	// code here
+}
+
+- else/if:
+if (<cond>){ // a condição é vdd?
+	// code here
+} else if { // senão, é ...? 
+	// code here
+} else if { // ou então ...? 
+	// code here
+}
+
+- switch case:
+swicth (something) {
+    case '...':
+    ...
+    ...
+    break;
+    
+    case '...':
+    ...
+    ...
+    break;
+    
+    //sempre executado:
+    default:
+    ...
+    ...
+    break;
