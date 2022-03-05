@@ -49,6 +49,9 @@ const directions{
 	LEFT: symbol( 'LEFT' ), 
 };
 
+//Verifica se propriedade existe em objeto:
+"propriedade" in objeto;
+
 - funções:
 a função abaixo pode ser reescrita como
 function fn(){
@@ -106,3 +109,46 @@ swicth (something) {
     ...
     ...
     break;
+    
+switch (expressão) {
+	case valor1:
+		//comands
+		break;
+	case valorN:
+		//comands
+		break;// se inexistente, execultará o default;
+	default:
+		//comands
+		break;
+}
+REPETIÇÃO:
+- For:
+for ([expressaoInicial]; [condicao]; [incremento]) {
+	//declaração
+}
+
+- While:
+while (<condicao>) {
+	//comands
+}
+
+- Do... While:
+do {
+	//comands
+} while (<condicao>);
+
+- For in e for of
+ let arr = [3, 5, 7];
+ arr.foo = "hello";
+ 
+ for (let i in arr){
+ 	console.log(i);	 // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr){
+ 	console.log(i);	 // logs "3", "5", "7"
+}
+ 
+- Break and continue:
+Break: quebra execução;
+continue: pula interação;
