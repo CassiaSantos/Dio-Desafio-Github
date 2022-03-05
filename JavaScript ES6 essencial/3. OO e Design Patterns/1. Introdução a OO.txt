@@ -1,0 +1,29 @@
+HERANÇA:
+- baseada em protótipos --> Prototype: var que armazena as definições do objeto;
+- __proto__ : referência que aponta para o portotype do tipo (constructor) criado!
+		--> "Baseado num construtor, é criado um prototype e nessa variável é armazenado sua referencia por esse __proto__"
+		
+const myText = String ('Hello prototype!');
+console.log(myText.split); // de onde vem o split????
+console.log(myText.__proto__split);// do Prototype da função construtora String!
+
+//Veja:
+console.log(myText.__proto__.split === String.prototype.split);
+// true
+
+//sendo assim, podemos assumir que o construtor de myText é String:
+console.log(myText.constructor === String);
+// true
+
+!!! __proto__ aponta para o prototype que é criado a partir de uma funçãp construtora!!!
+
+* O que eu digito:
+const myText = String ('Hello prototype!');
+
+* O que eu quero dizer:
+myText.constructor -> String // o constructor de myText é uma String
+myText.__proto__ -> String.prototype // e seu __proto__ vai ser igual a uma string.prototype
+
+
+NEW:
+Um novo objeto é criado a partir da função construtora e herda a função prototype dela
