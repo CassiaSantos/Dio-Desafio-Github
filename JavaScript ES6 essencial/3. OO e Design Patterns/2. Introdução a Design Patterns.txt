@@ -1,0 +1,10 @@
+3 Tipos de padrões:
+- Criação: aqueles que abstraem e/ou adiam o processo de criação de objetos. Ajudam a tornar o sistema independente de como seus objetos são criados, compostos e representados.
+
+estruturais:
+se preocupam com a forma como classes e objetos são compostos para formar estruturas maiores.
+
+Comportamentais: se concentram nos algoritmos e atribuições de responsabilidade entre objects. Descrevem tbm os padrões de comunicação entre eles.
+
+FACTORY
+funções que retornam um objeto sem a necessidade de chamá-las com o new.
