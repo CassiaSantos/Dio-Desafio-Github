@@ -26,4 +26,77 @@ myText.__proto__ -> String.prototype // e seu __proto__ vai ser igual a uma stri
 
 
 NEW:
-Um novo objeto é criado a partir da função construtora e herda a função prototype dela
+Um novo objeto é criado a partir da função construtora e herda a função prototype dela.
+//Criação da função e instancia:
+// ------------------- cria novo objeto a cada instanciamento -----------------------
+function Animal (qtDePatas) {
+	this.qtDePatas = qtDePatas;
+	this.movimentar = function () {}
+}
+
+function Cachorro (morde) {
+	Animal.call(this, 4);
+	
+	this.morde = morde;
+	this.latir = function () {
+		console.log("Au! Au!");
+	}
+}
+
+const pug = new Cachorro(false);
+const pitbull = new Cachorro(true );
+
+// -------------- Forma mais otimizada - escreve/declara no prototype ---------------
+function Animal () {}
+	Animal.prototype.qtDePatas = 0;
+	Animal.prototype.movimentar = function () {}
+
+function Cachorro (morde) {
+	this.qtDePatas = 4;
+	this.morde = morde;
+}
+
+Cachorro.prototype = Object.create(Animal);
+Cachorro.prototype.latir = function () {
+	console.log("Au! Au!");
+}
+
+const pug = new Cachorro(false);
+const pitbull = new Cachorro(true);
+
+CLASSES:
+- trazida com o ES6 para simplificar a herança de protótipo;
+- palavra-chave: class;
+- A criação de objetos com funções se transforma em classe:
+
+class Animal {
+	constructor(){
+		this.qtDePatas = 0;
+	}
+	
+	movimentar() {}
+}
+
+class Cachorro extends Animal{
+	constructor(morde){
+		super();
+		this.qtDePatas = 4;
+		this.morde = morde;
+	}
+	
+	latir(){
+		console.log("Au! Au!");
+	}
+}
+
+const pug = new Cachorro(false);
+const pitbull = new Cachorro(true);
+ 
+!!!!!!!!!!! Não possue modificadores de acesso!!!!!!!!!!!!!
+Mas usa o # para isso!
+
+STATIC:
+- Permite acessar métodos sem instanciar classes;
+- 
+
+
