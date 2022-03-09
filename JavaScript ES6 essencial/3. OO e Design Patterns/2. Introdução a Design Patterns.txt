@@ -8,3 +8,27 @@ Comportamentais: se concentram nos algoritmos e atribuições de responsabilidad
 
 FACTORY
 funções que retornam um objeto sem a necessidade de chamá-las com o new.
+
+
+- singleton: após a 1ª instância criada, ela será sempre a retornada. Mesmo se outra for criada!
+
+- module: organiza melhor o código e tira a necessidade de expor variáveis globais.
+
+FORMA ANTERIOR:
+(function ($) {
+	//plugin here
+}) (jQuery);
+
+
+COM O PATTERN:
+// declaração da classe/função/objects
+class ... {
+
+}
+
+//exportação do objeto:
+export default Person;
+
+//importa dela o que precisarei:
+import Person from '.models/person';
+// Assim é possível separar os arquivos de acordo com responsabilidade
