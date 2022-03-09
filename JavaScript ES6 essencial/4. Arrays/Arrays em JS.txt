@@ -43,9 +43,21 @@ const array2 = [item2.1, item2.2, item2.3];
 const array3 = array1.concat(array2);
 
 * fatia array:
-- SLICE: retorna um array fatiado de acordo com o início e fim especificado;
+- SLICE: retorna um NOVO array fatiado de acordo com o início e fim especificado;
+SINTAXE: const arr = [a partir de, até];
 const arr = [item1, item2, item3, item4, item5];
 console.log(arr.slice(0, 2);// retorna os valores do índice 0 até o 2, sem incluí-lo;
 console.log(arr.slice(-3);// retorna os valores do antepenúltimo índice até o  último;
 
+- SPLICE: altera um array adicionando novos elementos enquanto remove elementos antigos. Seu retorno é os itens removidos;
+// remove itens:
+const arr = [1, 2, 3, 4, 5, 6];
+arr.splice(2);
+console.log(arr); //remove os itens a partir do índice 2;
+
+// substituir elementos:
+Sintaxe: objectArray.splice(a partir do índice, qt de índices, novoValor);
+const arr = [1, 2, 3, 4, 5, 6];
+arr.splice(2, 0, 'novoValor')
+console.log(arr); //remove os itens a partir do índice 2;
 
