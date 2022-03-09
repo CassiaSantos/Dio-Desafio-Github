@@ -1,0 +1,51 @@
+* Para criar um Array:
+
+// Forma tradicional:
+const arr = [1, 2, 3]
+
+// Instanciamento:
+const arr2 = new Array(1,2,3);
+
+// Instanciamento a partir do número de parâmetros informados:
+const arr = Array.of(1,2,3);
+
+// Instanciamento a partir de um parâmetro array-like ou iterable-object (são esparados):
+const arr = Array.of(1,2,3);
+
+
+* Inserir e remover elementos:
+- push: adiciona elementos no final do array e retorna o tam. do novo array.
+// retorno:
+const arrLength = arr.push('acerola');
+console.log(arrLength);
+
+- pop: remove elementos no final do array e retorna o item removido do array.
+// retorno:
+const removedItem = arr.pop();
+console.log(removedItem);
+
+- unshift: adiciona elementos ao inicio do array e retorna o tam. do novo array.
+// retorno:
+const arrLength = arr.unshift('acerola');
+console.log(arrLength);
+
+- SHIFT: REMOVE elementos ao INÍCIO do array e retorna o item removido do array.
+// retorno:
+const removedItem = arr.shift();
+console.log(removedItem);
+
+* Exibição personalizada:
+* Concatena itens de arrays:
+- CONCAT:
+const array1 = [item1.1, item1.2, item1.3];
+const array2 = [item2.1, item2.2, item2.3];
+
+const array3 = array1.concat(array2);
+
+* fatia array:
+- SLICE: retorna um array fatiado de acordo com o início e fim especificado;
+const arr = [item1, item2, item3, item4, item5];
+console.log(arr.slice(0, 2);// retorna os valores do índice 0 até o 2, sem incluí-lo;
+console.log(arr.slice(-3);// retorna os valores do antepenúltimo índice até o  último;
+
+
