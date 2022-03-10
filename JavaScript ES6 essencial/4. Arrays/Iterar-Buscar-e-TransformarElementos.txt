@@ -1,0 +1,55 @@
+ITERAR ELEMENTOS:
+*Loop for each: percorre e aceita 3 parâmetros - valor, index e array que está sendo percorrido;
+const arr = [1, 2, 3, 4, 5, 6];
+arr.forEach((value, index) => { //chamada da função;
+	console.log('${index}: ${value}');
+});
+
+Saída:
+0: 1
+1: 2
+2: 3
+3: 4
+...
+
+* map: retorna um novo array, de mesmo tam., interando cada item de um array
+const arr = [1, 2, 3, 4, 5, 6];
+arr.map(value => value * 2); // recupera um valor e multiplica-o por 2.
+console.log(arr);
+
+* flat: retorna um novo array com tds os elementos de um sub-array concatenados de forma recursiva de acordo com a profundidade especificada (depth).
+const idades = [18, 23, 25, [29, [30, 20], 45]];
+idades.flat(2);
+// saída: [18, 23, 25, 29, 30, 20, 45]
+
+* flatMap
+Retorna um novo array assim como a função map e executa um flat de profundidade 1.
+
+* Keys: retorna um Array Iterator que contém as chaves para cada elemento do array.
+
+* values: retorna um Array Iterator que contém os valores para cada elemento do array.
+
+* entries: retorna um Array iterator que contém os pares chave/valor para cada elemento do array.
+
+* find: itera e retorna o 1º item de um array que satisfaz a condição.
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(arr.find(value => value > 2)); //3
+
+* findIndex: semelhante ao anterior, porém retorna o índice.
+
+* filter: semelhante ao find, porém retorna tds os elementos que satisfazem a condição.
+
+* indexOf e lastIndexOf: retorna o número do índice onde o valor passado por parâmetro tem ocorrencia pela 1ª ou última vez.
+
+* includes: verifica se determinado valor está contido no array --> boolean.
+
+* some: verifica se há no array algum valor que satisfaz a uma determinada condição.
+
+* every: verifica se tds os itens no array possuem um valor que satisfaz a uma determinada condição.
+
+BUSCAR ELEMENTOS:
+
+
+TRANSFORMAR ELEMENTOS:
+
+
