@@ -16,3 +16,35 @@ var sum = (a, b) => {
 	return ;
 }
 
+- Não possuem o mesmo hoisting de funções normais. 
+logo não podem ser invocadas antes de serem criadas.
+- não é possível criar instancias.
+- referenciam o contexto léxico: bloco dentro das chaves.
+
+------------------- ES6 -------------------------
+Funções podem ter argumentos com VALORES PADRÕES:
+function multiply (a, b = 1){// o valor de b será 1 quando não for passado um valor ou quando for undefined;
+	return a * b;
+}
+console.log(multiply(5)); //não foi passado valor para b;
+
+Esse valor padrão pode ser tammbém o retorno de uma função:
+
+function randomNumber() {
+	return Math.random() * 10;
+}
+
+function multiply (a, b = randomNumber){
+	return a * b;
+}
+console.log(multiply(5)); //não foi passado valor para b; será um valor aleatório gerado pela função randomNumber;
+
+------------------ Funções em objetos -----------------
+var obj = {
+	sum (a, b) {
+		return a + b;
+	}
+}
+
+console.log(obj);
+
